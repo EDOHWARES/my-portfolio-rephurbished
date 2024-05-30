@@ -1,0 +1,47 @@
+.gradient-border::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+  }
+
+  .gradient-border:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .contact-btn {
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    transition: all 0.3 ease;
+  }
+  .contact-btn:hover {
+    background: black;
+    outline-color: #a993fe;
+  }
+
+  .menu-btn {
+    line-height: 0;
+    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .menu-btn:hover {
+    color: #a993fe;
+    background: black;
+    border: 1px solid #a993fe;
+  }
+
+  .mobile-nav-shadow {
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(0, 0, 0, 0.1), 
+    0 2px 4px rgba(255, 255, 255, 0.2), 
+    0 0 10px rgba(255, 255, 255, 0.3);
+  }
