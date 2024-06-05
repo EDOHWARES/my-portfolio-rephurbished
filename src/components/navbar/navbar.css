@@ -32,10 +32,11 @@
     border: 1px solid transparent;
     transition: all 0.4s ease;
   }
+
   .menu-btn:hover {
     color: #a993fe;
     background: black;
-    border: 1px solid #a993fe;
+    border-color: #a993fe;
   }
 
   .mobile-nav-shadow {

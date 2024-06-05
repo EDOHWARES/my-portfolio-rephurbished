@@ -1,0 +1,34 @@
+section.container {
+    width: 100%;
+}
+
+.skills-container::after,
+.skills-container::before {
+    content: ' ';
+    width: 28rem;
+    height: 28rem;
+    border-radius: 28.125rem;
+    background-color: #7c66e3;
+    position: absolute;
+    z-index: -1;
+    filter: blur(200px);
+}
+
+.skills-container::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.skills-container::before {
+    background-color: #16011d;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+@media (max-width: 900px) {
+    .skills-container::after,
+    .skills-container::before {
+        width: 18rem;
+        height: 18rem;
+    }
+}

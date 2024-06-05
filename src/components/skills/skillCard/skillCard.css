@@ -1,0 +1,4 @@
+.skills-card:hover,
+.skills-card.active {
+    background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+}

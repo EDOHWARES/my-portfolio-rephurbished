@@ -2,7 +2,7 @@ import React from 'react';
 
 import './hero.css';
 
-import profile2 from "../assets/images/profile2.jpg";
+import profile2 from "../../assets/images/profile2.jpg";
 
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -12,7 +12,7 @@ import { MdCss } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className='hero-container flex flex-col gap-14 items-center justify-center md:items-start md:justify-between md:flex-row md:gap-0'>
+    <div id='hero' className='hero-container flex flex-col gap-14 items-center justify-center md:items-start md:justify-between md:flex-row md:gap-0'>
         <div className='w-full md:w-1/2'>
             <h2 className='text-5xl md:text-[3.8rem] leading-[4rem] md:leading-[5rem] font-[600] mb-[1rem] text-center md:text-start'>Building Digital Experiences That Inspires</h2>
             <p className='w-full text-center md:text-start md:w-[80%] text-[0.8rem] md:text-[1rem] font-[400] leading-[1.3rem] md:leading-[2rem]'>

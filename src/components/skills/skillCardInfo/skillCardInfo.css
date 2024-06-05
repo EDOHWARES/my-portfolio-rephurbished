@@ -1,0 +1,17 @@
+.skills-info-card h6 {
+    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #6751b9;
+    color: red;
+}
+
+.skill-progress {
+    background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-info-content {
+    scrollbar-color: gray #0000001A;
+}
