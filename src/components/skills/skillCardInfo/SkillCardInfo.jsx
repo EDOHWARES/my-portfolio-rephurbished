@@ -6,7 +6,7 @@ const SkillCardInfo = ({heading, skills}) => {
     <div className='skills-info-card rounded-[0.65rem] border-[1.5px] border-[#6751b9] backdrop-blur-lg max-h-[24rem] '>
         <h6 className='text-[1.2rem] font-[500] py-[0.8rem] px-[2rem] bg-clip-text'>{heading}</h6>
 
-        <div className='skills-info-content p-[2rem] max-h-[15rem] overflow-y-scroll'>
+        <div className='skills-info-content p-[2rem] max-h-[18rem] overflow-y-scroll'>
           {skills.map((item, index) => (
             <React.Fragment key={`skill_${index}`}>
               <div className='skill-info flex items-center justify-between'>

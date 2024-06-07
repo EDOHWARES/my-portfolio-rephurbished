@@ -1,6 +1,8 @@
 import NavBar from "./components/navbar/NavBar";
 import Hero from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
+import WorkExperience from "./components/workExperience/WorkExperience";
+import ContactMe from "./components/contactMe/ContactMe";
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <section className="max-w-[1300px] mx-auto flex flex-col items-center justify-center w-full relative py-[0.5rem] px-4 mt-28">
         <Hero />
         <Skills />
+        <WorkExperience />
+        <ContactMe />
       </section>
     </section>
   )

@@ -1,0 +1,9 @@
+.sendBtn {
+    background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+    transition: all 0.3s ease;
+}
+
+.sendBtn:hover {
+    color: #a892fe;
+    background: transparent;
+}
