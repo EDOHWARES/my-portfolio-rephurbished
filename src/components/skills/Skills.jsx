@@ -13,7 +13,7 @@ const Skills = () => {
     }
 
   return (
-    <section className='skills-container w-full my-[4rem] mx-0 relative'>
+    <section id='skills' className='skills-container w-full my-[4rem] mx-0 relative'>
         <h5 className='text-[1.3rem] md:text-[1.5rem] font-[600] mb-[2rem] md:mb-[3.5rem]'>Technical Proficiency</h5>
 
         <div className='skills-content w-full flex items-start md:gap-5 justify-between p-[1rem] flex-col-reverse gap-8 md:flex-row'>

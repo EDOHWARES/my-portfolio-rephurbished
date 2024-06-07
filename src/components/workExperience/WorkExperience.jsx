@@ -36,7 +36,7 @@ const WorkExperience = () => {
 
 
   return (
-    <section className='experience-container w-full my-[4rem] mx-0 relative'>
+    <section id='work-experience' className='experience-container w-full my-[4rem] mx-0 relative'>
         <h5 className='text-[1.3rem] md:text-[1.5rem] font-[600] mb-[2rem] md:mb-[3rem]'>Work Experience</h5>
 
         <div className="experience-content mx-6 lg:mx-0">
