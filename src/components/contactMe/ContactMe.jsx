@@ -7,7 +7,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const ContactMe = () => {
   return (
-    <section id='contact' className='my-[4rem] mx-0 relative w-full'>
+    <section id='contact' className='my-[4rem] mx-0 relative w-full overflow-hidden'>
         <h5 className='text-[1.5rem] font-[600] mb-[3rem]'>Contact Me</h5>
 
         <div className='contact-content flex gap-[3rem] flex-col md:flex-row'>

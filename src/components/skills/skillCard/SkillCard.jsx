@@ -11,7 +11,7 @@ const SkillCard = ({title, icon, isActive, onClick}) => {
 
         <div className='skill-icon max-h-[5rem]'>
             <div 
-            className='text-[2.4rem] text-[#6751b9] md:text-[3rem] flex items-center justify-center bg-[#2a2252] rounded-[0.65rem] border-[1.5px] border-[#6852ba] absolute top-[-1rem] left-[-1rem] p-2'>
+            className='text-[2rem] text-[#6751b9] md:text-[3rem] flex items-center justify-center bg-[#2a2252] rounded-[0.65rem] border-[1.5px] border-[#6852ba] absolute top-[-1rem] left-[-1rem] p-2'>
                 {icon}
             </div>
 
