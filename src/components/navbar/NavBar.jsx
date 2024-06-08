@@ -41,16 +41,16 @@ const NavBar = () => {
                     <div className='w-[12rem] mb-10 md:hidden h-auto text-xl font-semibold'>
                         {'<EDOHWARES/>'}
                     </div>
-                    <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#">Home</a></li>
-                    <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#skills">Skills</a></li>
-                    <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#work-experience">Work Experience</a></li>
-                    <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#contact">Contact Me</a></li>
+                    <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#" >Home</a></li>
+                    <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#skills">Skills</a></li>
+                    <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#work-experience">Work Experience</a></li>
+                    <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#contact">Contact Me</a></li>
                     
                     <a href='https://x.com/4_edohemmanuel' target='_blank' className='contact-btn w-full md:w-fit text-[0.9rem] font-[500] flex items-center justify-start md:justify-center text-white hover:text-[#a993fe] py-[0.6rem] px-[2rem] border-[1.5px] border-transparent outline-none rounded-[0.2rem] cursor-pointer duration-500 hover-border-red-400'>
                         Hire Me
                     </a>
                 </ul>
-                <div onClick={() => setShowNav(!showNav)} className='menu-btn flex md:hidden cursor-pointer p-1 text-white rounded-[0.4rem] border-none items-center justify-center duration-300'>
+                <div onClick={() => setShowNav(!showNav)} className='menu-btn overflow-hidden flex md:hidden cursor-pointer p-1 text-white rounded-[0.4rem] border-none items-center justify-center duration-300'>
                     {!showNav ? <GiHamburger 
                     className='h-[2rem] w-[2rem] md:h-[2.5rem] md:w-[2.5rem] '
                     />: 

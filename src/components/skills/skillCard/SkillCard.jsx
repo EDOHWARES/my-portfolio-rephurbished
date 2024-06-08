@@ -5,7 +5,7 @@ const SkillCard = ({title, icon, isActive, onClick}) => {
   return (
     <div 
         className={`skills-card ${isActive ? 'active' : ''} 
-        rounded-[0.65rem] border-[1.5px] border-[#6751b9] p-[2rem] md:p-[2.5rem] text-center bg-[#16112F65] flex items-center justify-center backdrop-blur-lg relative cursor-pointer transition-all ease-out duration-500`}
+        rounded-[0.65rem] border-[1.5px] border-[#6751b9] h-[2rem] md:h-fit p-[1rem] md:p-[2.5rem] text-center bg-[#16112F65] flex items-center justify-center backdrop-blur-lg relative cursor-pointer transition-all ease-out duration-500`}
         onClick={() => onClick()}
     >
 
@@ -17,7 +17,7 @@ const SkillCard = ({title, icon, isActive, onClick}) => {
 
         </div>
 
-        <span className='text-[0.9rem] ml-4 md:ml-0 text-center flex items-center justify-center md:text-[1.3rem] font-[500]'>{title}</span>
+        <span className='text-[0.6rem] ml-4 md:ml-0 text-center flex items-center justify-center md:text-[1.3rem] font-[500]'>{title}</span>
         
     </div>
   )
