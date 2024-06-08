@@ -4,6 +4,10 @@ import { PiSelectionBackgroundFill } from "react-icons/pi";
 import { FaTools } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 
+//Images
+import det from '../assets/images/det.png';
+import quiz from '../assets/images/quiz.png';
+
 export const SKILLS = [
     {
         title: 'Frontend',
@@ -74,5 +78,20 @@ export const WORK_EXPERIENCE = [
             "Conducted performance optimization tasks, resulting in a 15% improvement in page load times.",
             "Gained hands-on experience with version control systems, specifically Git, in a collaborative project.",
         ]
+    }
+];
+
+export const Projects = [
+    {
+        title: 'Quiz App',
+        imageUrl: quiz,
+        description: "This web application built with react.js and tailwindcss provides a nice UI for seamless user experience and tests the player on basic common interview question.",
+        link: 'https://edquiz-app.netlify.app/' 
+    },
+    {
+        title: 'Matrix Determinant Calculator',
+        imageUrl: det,
+        description: "This web application also showcases a nice UI and put user's experience first. It can server as a handy tool for both highschool and college student, for calculating the determinant of a square matrix seamlessly.",
+        link: 'https://edohwares-determinant-calculator.netlify.app/'
     }
 ]

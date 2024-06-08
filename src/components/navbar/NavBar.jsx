@@ -37,10 +37,10 @@ const NavBar = () => {
                 <a href='#' className='w-[12rem] h-auto text-xl font-semibold cursor-pointer'>
                     {'<EDOHWARES/>'}
                 </a>
-                <ul className={` mobile-nav-shadow ${showNav ? 'flex' : 'hidden'} transition-all ease-in-out duration-1000 flex flex-col pt-8 py-[0.5rem] gap-10 px-5 md:px-0 md:py-0 items-start bg-[#342864] md:shadow-none fixed md:bg-transparent w-[65%] md:w-auto h-screen md:h-auto left-0 top-0 md:static md:flex md:flex-row md:items-center md:gap-[0.5rem] list-none`}>
-                <div className='w-[12rem] mb-10 md:hidden h-auto text-xl font-semibold'>
-                    {'<EDOHWARES/>'}
-                </div>
+                <ul className={` mobile-nav-shadow ${showNav ? 'flex animate-in' : 'hidden'} transition-all ease-in-out duration-1000 flex flex-col pt-8 py-[0.5rem] gap-10 px-5 md:px-0 md:py-0 items-start bg-[#342864] md:shadow-none fixed md:bg-transparent w-[65%] md:w-auto h-screen md:h-auto left-0 top-0 md:static md:flex md:flex-row md:items-center md:gap-[0.5rem] list-none`}>
+                    <div className='w-[12rem] mb-10 md:hidden h-auto text-xl font-semibold'>
+                        {'<EDOHWARES/>'}
+                    </div>
                     <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#">Home</a></li>
                     <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#skills">Skills</a></li>
                     <li className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#work-experience">Work Experience</a></li>

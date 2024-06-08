@@ -3,6 +3,7 @@ import Hero from "./components/hero/Hero";
 import Skills from "./components/skills/Skills";
 import WorkExperience from "./components/workExperience/WorkExperience";
 import ContactMe from "./components/contactMe/ContactMe";
+import RecentProjects from "./components/recentProjects/RecentProjects";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Skills />
         <WorkExperience />
+        <RecentProjects />
         <ContactMe />
       </section>
     </section>

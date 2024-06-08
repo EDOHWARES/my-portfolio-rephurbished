@@ -14,8 +14,11 @@ const ContactForm = () => {
     message: ''
   })
 
+  console.log(formData.message)
+
   const handleChange = (e) => {
     const {name, value} = e.target;
+    console.log(value)
     setFormData({
       ...formData, [name] : value
     })
