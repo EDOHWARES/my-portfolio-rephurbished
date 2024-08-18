@@ -7,17 +7,19 @@ import { GiSkills } from "react-icons/gi";
 //Images
 import det from '../assets/images/det.png';
 import quiz from '../assets/images/quiz.png';
+import adii from '../assets/images/adii-commodity.png';
+import foodDelivery from '../assets/images/food-delivery.png';
 
 export const SKILLS = [
     {
         title: 'Frontend',
         icon: {frontend: CgWebsite},
         skills: [
-            {skill: 'HTML5', percentage: '80%'},
-            {skill: 'CSS3 (Sass/SCSS)', percentage: '90%'},
-            {skill: 'Javascript', percentage: '75%'},
-            {skill: 'React.js', percentage: '80%'},
-            {skill: 'TailwindCSS', percentage: '90%'},
+            {skill: 'HTML5', percentage: '100%'},
+            {skill: 'CSS3 (SASS/SCSS)', percentage: '90%'},
+            {skill: 'Javascript', percentage: '95%'},
+            {skill: 'React.js', percentage: '90%'},
+            {skill: 'TailwindCSS', percentage: '96%'},
             {skill: 'Bootstrap', percentage: '70%'},
         ]
     },
@@ -25,9 +27,10 @@ export const SKILLS = [
         title: 'Backend',
         icon: {backend: PiSelectionBackgroundFill},
         skills: [
-            {skill: 'Node.js', percentage: '50%'},
-            {skill: 'Express.js', percentage: '65%'},
-            {skill: 'MySQL', percentage: '50%'},
+            {skill: 'Node.js', percentage: '90%'},
+            {skill: 'Express.js', percentage: '95%'},
+            {skill: 'MongoDB', percentage: '70'},
+            {skill: 'MySQL', percentage: '80%'},
         ]
     },
     {
@@ -35,7 +38,7 @@ export const SKILLS = [
         icon: {tools: FaTools},
         skills: [
             {skill: 'Git & Github', percentage: '85%'},
-            {skill: 'Visual Studio Code', percentage: '75%'},
+            {skill: 'Visual Studio Code', percentage: '85%'},
             {skill: 'Responsive Design', percentage: '85%'},
         ]
     },
@@ -74,24 +77,35 @@ export const WORK_EXPERIENCE = [
         title: 'Zuri Internship(Frontend Developer)',
         date: 'May 2023 - August 2023',
         responsibilities: [
-            "Participated in a task of a movie-kind web applications using real-time API'S",
+            "Participated in developing a movie-web applications using real-time movie API'S",
             "Conducted performance optimization tasks, resulting in a 15% improvement in page load times.",
-            "Gained hands-on experience with version control systems, specifically Git, in a collaborative project.",
+            "Gained hands-on experience with version control systems, specifically Git in a collaborative project.",
         ]
     }
 ];
 
 export const Projects = [
     {
+        title: 'ADii Commodity Trend Platform',
+        imageUrl: adii,
+        description: 'This is an ongoing project. This website focuses on providing users with prices and trends of commodities across different states in Nigeria. I utilized the MERN-STACK in developing this platform.',
+        link: "https://github.com/EDOHWARES/ADii"
+    },
+    {
+        title: 'Food Delivery Platform',
+        imageUrl: foodDelivery,
+        description: 'This website replicates all the functionality necessary to make food orders, delivery and logistics. It also includes a payment and order management system. I utilized the MERN-STACK in developing this website.'
+    },
+    {
         title: 'Quiz App',
         imageUrl: quiz,
-        description: "This web application built with react.js and tailwindcss provides a nice UI for seamless user experience and tests the player on basic common interview question.",
+        description: "This web application built with react.js and tailwindcss provides a seamless UI and hands-on interview quiz for techies to test themselves.",
         link: 'https://edquiz-app.netlify.app/' 
     },
     {
         title: 'Matrix Determinant Calculator',
         imageUrl: det,
-        description: "This web application also showcases a nice UI and put user's experience first. It can server as a handy tool for both highschool and college student, for calculating the determinant of a square matrix seamlessly.",
+        description: "This web application serves as a handy tool  for calculating the determinant of a square matrix seamlessly. High school and college students can utilize this web calculator.",
         link: 'https://edohwares-determinant-calculator.netlify.app/'
     }
 ]
