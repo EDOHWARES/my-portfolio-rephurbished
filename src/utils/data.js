@@ -7,19 +7,22 @@ import { GiSkills } from "react-icons/gi";
 //Images
 import det from '../assets/images/det.png';
 import quiz from '../assets/images/quiz.png';
-import adii from '../assets/images/adii-commodity.png';
 import foodDelivery from '../assets/images/food-delivery.png';
+import adii from '../assets/images/adii.jpeg';
+import eliteFood from '../assets/images/elite-food.png';
+
 
 export const SKILLS = [
     {
         title: 'Frontend',
         icon: {frontend: CgWebsite},
         skills: [
-            {skill: 'HTML5', percentage: '100%'},
-            {skill: 'CSS3 (SASS/SCSS)', percentage: '90%'},
-            {skill: 'Javascript', percentage: '95%'},
             {skill: 'React.js', percentage: '90%'},
             {skill: 'TailwindCSS', percentage: '96%'},
+            {skill: 'Javascript', percentage: '95%'},
+            {skill: 'Typescript', percentage: '50%'},
+            {skill: 'HTML5', percentage: '100%'},
+            {skill: 'CSS3 (SASS/SCSS)', percentage: '90%'},
             {skill: 'Bootstrap', percentage: '70%'},
         ]
     },
@@ -95,6 +98,11 @@ export const Projects = [
         title: 'Food Delivery Platform',
         imageUrl: foodDelivery,
         description: 'This website replicates all the functionality necessary to make food orders, delivery and logistics. It also includes a payment and order management system. I utilized the MERN-STACK in developing this website.'
+    },
+    {
+        title: 'Elite Food',
+        imageUrl: eliteFood,
+        description: 'This is a website I and a team of 3 collaborated in developing as a project for a reactjs hackathon held at KadTech-City. This website serves as a medium between the community and several registered restaurants.'
     },
     {
         title: 'Quiz App',
