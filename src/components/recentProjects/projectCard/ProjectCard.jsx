@@ -5,8 +5,8 @@ const ProjectCard = ({ title, description, image, link }) => {
   return (
     <div className="card border-2 border-[#6751b9] w-full flex flex-col md:flex-row flex-1">
 
-        <div className='w-full md:w-1/2'>
-            <img src={image} alt={title} className="object-cover w-full h-full" />
+        <div className='w-full md:w-1/2 bg-white'>
+            <img src={image} alt={title} className="object-cover  w-full h-full" />
         </div>
 
       <div className="card-content w-full md:w-1/2">

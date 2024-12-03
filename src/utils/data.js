@@ -10,6 +10,8 @@ import quiz from '../assets/images/quiz.png';
 import foodDelivery from '../assets/images/food-delivery.png';
 import adii from '../assets/images/adii.jpeg';
 import eliteFood from '../assets/images/elite-food.png';
+import safeRoute from '../assets/images/safeRoute.png';
+import blogie from '../assets/images/blogie.png';
 
 
 export const SKILLS = [
@@ -17,41 +19,41 @@ export const SKILLS = [
         title: 'Frontend',
         icon: {frontend: CgWebsite},
         skills: [
-            {skill: 'React.js', percentage: '90%'},
-            {skill: 'TailwindCSS', percentage: '96%'},
-            {skill: 'Javascript', percentage: '95%'},
-            {skill: 'Typescript', percentage: '50%'},
+            {skill: 'React.js', percentage: '100%'},
+            {skill: 'TailwindCSS', percentage: '100%'},
+            {skill: 'Javascript', percentage: '100%'},
+            {skill: 'Typescript', percentage: '100%'},
             {skill: 'HTML5', percentage: '100%'},
-            {skill: 'CSS3 (SASS/SCSS)', percentage: '90%'},
-            {skill: 'Bootstrap', percentage: '70%'},
+            {skill: 'CSS3 (SASS/SCSS)', percentage: '100%'},
+            {skill: 'Bootstrap', percentage: '100%'},
         ]
     },
     {
         title: 'Backend',
         icon: {backend: PiSelectionBackgroundFill},
         skills: [
-            {skill: 'Node.js', percentage: '90%'},
-            {skill: 'Express.js', percentage: '95%'},
-            {skill: 'MongoDB', percentage: '70'},
-            {skill: 'MySQL', percentage: '80%'},
+            {skill: 'Node.js', percentage: '100%'},
+            {skill: 'Express.js', percentage: '100%'},
+            {skill: 'MongoDB', percentage: '100'},
+            {skill: 'MySQL', percentage: '100%'},
         ]
     },
     {
         title: 'Tools',
         icon: {tools: FaTools},
         skills: [
-            {skill: 'Git & Github', percentage: '85%'},
-            {skill: 'Visual Studio Code', percentage: '85%'},
-            {skill: 'Responsive Design', percentage: '85%'},
+            {skill: 'Git & Github', percentage: '100%'},
+            {skill: 'Visual Studio Code', percentage: '100%'},
+            {skill: 'Responsive Design', percentage: '100%'},
         ]
     },
     {
         title: 'Soft Skills',
         icon: {softSkills: GiSkills},
         skills: [
-            {skill: 'Problem-solving', percentage: '85%'},
-            {skill: 'Collaboration', percentage: '75%'},
-            {skill: 'Attention to Details', percentage: '85%'},
+            {skill: 'Problem-solving', percentage: '100%'},
+            {skill: 'Collaboration', percentage: '100%'},
+            {skill: 'Attention to Details', percentage: '100%'},
         ]
     },
 
@@ -59,10 +61,10 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
     {
-        title: 'Junior Frontend Developer at Cheapdotcom',
-        date: 'February 2023 - November 2023',
+        title: 'Full-Stack Web Developer at Cheapdotcom',
+        date: 'February 2023 - till date',
         responsibilities: [
-            "Collaborated with a team of Frontend developers in the redesign of the company's flagship product, resulting in a 30% increase in patronage",
+            "Collaborated with a team of web developers in the redesign of the company's flagship product, resulting in a 30% increase in patronage",
             "Introduced and Integrated React.js into the tech stack, improving code maintainability and development  efficiency.",
             "Developed and maintained client websites, ensuring high quality standards and timely project delivery."
         ]
@@ -89,20 +91,28 @@ export const WORK_EXPERIENCE = [
 
 export const Projects = [
     {
+        title: 'Blogie',
+        imageUrl: blogie,
+        description: 'Blogie focuses on delivering an intuitive user experience, prioritizing seamless navigation and ease of use. Whether creating, documenting, or reading blogs, Blogie ensures that your content is easily accessible and engaging.',
+        link: 'https://github.com/EDOHWARES/Blogie'
+    },
+    {
+        title: 'SafeRoute-NG',
+        imageUrl: safeRoute,
+        description: 'SafeRoute-NG is a web solution designed to provide real-time data on road conditions. It aims to enhance communication and data flow for transporters, logistics companies. passengers and all road users..',
+        link: "https://github.com/EDOHWARES/SafeRoute-NG"
+    },
+    {
         title: 'ADii Commodity Trend Platform',
         imageUrl: adii,
         description: 'This is an ongoing project. This website focuses on providing users with prices and trends of commodities across different states in Nigeria. I utilized the MERN-STACK in developing this platform.',
         link: "https://github.com/EDOHWARES/ADii"
     },
     {
-        title: 'Food Delivery Platform',
-        imageUrl: foodDelivery,
-        description: 'This website replicates all the functionality necessary to make food orders, delivery and logistics. It also includes a payment and order management system. I utilized the MERN-STACK in developing this website.'
-    },
-    {
         title: 'Elite Food',
         imageUrl: eliteFood,
-        description: 'This is a website I and a team of 3 collaborated in developing as a project for a reactjs hackathon held at KadTech-City. This website serves as a medium between the community and several registered restaurants.'
+        description: 'This is a website I and a team of 3 collaborated in developing as a project for a reactjs hackathon held at KadTech-City. This website serves as a medium between the community and several registered restaurants.',
+        link: 'https//github.com/EDOHWARES'
     },
     {
         title: 'Quiz App',
