@@ -3,10 +3,10 @@ import './projectCard.css';
 
 const ProjectCard = ({ title, description, image, link }) => {
   return (
-    <div className="card border-2 border-[#6751b9] w-full flex flex-col flex-1 h-[40rem]">
+    <a href={link} className="card border-2 border-[#6751b9] w-full flex flex-col flex-1 h-fit md:h-[40rem]">
 
-        <div className='w-full h-1/2 bg-white object-top border-2 border-[#6751b9]'>
-            <img src={image} alt={title} className="object-cover  w-full h-full" />
+        <div className='w-full h-fit bg-white object-top border-2 border-[#6751b9]'>
+            <img src={image} alt={title} className="object-contain  w-full h-full" />
         </div>
 
       <div className="card-content w-full">
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, description, image, link }) => {
           View Project
         </a>
       </div>
-    </div>
+    </a>
   );
 };
 
