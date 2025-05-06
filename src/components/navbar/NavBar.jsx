@@ -46,7 +46,7 @@ const NavBar = () => {
                     <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#work-experience">Work Experience</a></li>
                     <li onClick={() => setShowNav(false)} className={`md:${listStyle}`}><a className={`${anchorStyle} gradient-border`} href="#contact">Contact Me</a></li>
                     
-                    <a href='https://x.com/4_edohemmanuel' target='_blank' className='contact-btn w-full md:w-fit text-[0.9rem] font-[500] flex items-center justify-start md:justify-center text-white hover:text-[#a993fe] py-[0.6rem] px-[2rem] border-[1.5px] border-transparent outline-none rounded-[0.2rem] cursor-pointer duration-500 hover-border-red-400'>
+                    <a href='https://x.com/0xEDOHWARES' target='_blank' className='contact-btn w-full md:w-fit text-[0.9rem] font-[500] flex items-center justify-start md:justify-center text-white hover:text-[#a993fe] py-[0.6rem] px-[2rem] border-[1.5px] border-transparent outline-none rounded-[0.2rem] cursor-pointer duration-500 hover-border-red-400'>
                         Hire Me
                     </a>
                 </ul>

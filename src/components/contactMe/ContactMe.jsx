@@ -15,12 +15,12 @@ const ContactMe = () => {
                 <ContactInfoCard 
                 icon={<FaSquareXTwitter className='text-[1.8rem]' />}
                 text='EDOHWARES'
-                link='https://x.com/4_edohemmanuel'
+                link='https://x.com/0xEDOHWARES'
                 />
 
                 <ContactInfoCard 
                 icon={<FaSquareGithub className='text-[1.8rem]' />}
-                text='https://github.com/EDOHWARES'
+                text='EDOHWARES'
                 link="https://github.com/EDOHWARES"
                 />
             </div>
