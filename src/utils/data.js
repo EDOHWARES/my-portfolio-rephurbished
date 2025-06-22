@@ -22,13 +22,13 @@ export const SKILLS = [
     title: "Frontend",
     icon: { frontend: CgWebsite },
     skills: [
-      { skill: "NextJs", percentage: "100%" },
+      { skill: "Next.js", percentage: "100%" },
       { skill: "React.js", percentage: "100%" },
-      { skill: "TailwindCSS", percentage: "100%" },
-      { skill: "Javascript", percentage: "100%" },
-      { skill: "Typescript", percentage: "100%" },
+      { skill: "Tailwind CSS", percentage: "100%" },
+      { skill: "JavaScript (ES6+)", percentage: "100%" },
+      { skill: "TypeScript", percentage: "100%" },
       { skill: "HTML5", percentage: "100%" },
-      { skill: "CSS3 (SASS/SCSS)", percentage: "100%" },
+      { skill: "CSS3 / SASS", percentage: "100%" },
       { skill: "Bootstrap", percentage: "100%" },
     ],
   },
@@ -38,101 +38,137 @@ export const SKILLS = [
     skills: [
       { skill: "Node.js", percentage: "100%" },
       { skill: "Express.js", percentage: "100%" },
-      { skill: "MongoDB", percentage: "100" },
+      { skill: "MongoDB", percentage: "100%" },
       { skill: "MySQL", percentage: "100%" },
+      { skill: "Prisma ORM", percentage: "100%" },
+      { skill: "RESTful APIs", percentage: "100%" },
     ],
   },
   {
-    title: "Tools",
+    title: "Tools & Workflow",
     icon: { tools: FaTools },
     skills: [
-      { skill: "Git & Github", percentage: "100%" },
-      { skill: "Visual Studio Code", percentage: "100%" },
+      { skill: "Git & GitHub", percentage: "100%" },
+      { skill: "VS Code", percentage: "100%" },
+      { skill: "Postman", percentage: "100%" },
+      { skill: "Figma (for Dev Handoff)", percentage: "100%" },
+      { skill: "Chrome DevTools", percentage: "100%" },
       { skill: "Responsive Design", percentage: "100%" },
+      { skill: "Agile / Scrum", percentage: "100%" },
     ],
   },
   {
     title: "Soft Skills",
     icon: { softSkills: GiSkills },
     skills: [
-      { skill: "Problem-solving", percentage: "100%" },
-      { skill: "Collaboration", percentage: "100%" },
-      { skill: "Attention to Details", percentage: "100%" },
+      { skill: "Problem Solving", percentage: "100%" },
+      { skill: "Team Collaboration", percentage: "100%" },
+      { skill: "Attention to Detail", percentage: "100%" },
+      { skill: "Adaptability", percentage: "100%" },
+      { skill: "Communication", percentage: "100%" },
     ],
   },
 ];
 
+
 export const WORK_EXPERIENCE = [
   {
     title: "Full-Stack Web Developer at Cheapdotcom",
-    date: "February 2023 - till date",
+    date: "February 2023 – Present",
     responsibilities: [
-      "Collaborated with a team of web developers in the redesign of the company's flagship product, resulting in a 30% increase in patronage",
-      "Introduced and Integrated React.js into the tech stack, improving code maintainability and development  efficiency.",
-      "Developed and maintained client websites, ensuring high quality standards and timely project delivery.",
+      "Led the redesign of the company's flagship platform, increasing user engagement and boosting client acquisition by 30%.",
+      "Integrated React.js into the existing tech stack, enhancing code modularity and reducing feature rollout time by 25%.",
+      "Maintained and optimized multiple client websites, ensuring top-tier performance, accessibility, and SEO standards.",
     ],
   },
   {
-    title: "Intern Frontend Developer at CollideAfrica",
-    date: "March 2023 - December 2023",
+    title: "Frontend Developer at CollideAfrica",
+    date: "March 2023 – December 2023",
     responsibilities: [
-      "Collaborated with a team of developers in building the Collide's LMS(Learning Management System)",
-      "Implemented advanced CSS animations and transitions to enhance the overall user experience.",
-      "Collaborated with UX/UI designers to translate wireframes and mockups into responisve and interactive web applications",
+      "Built and shipped key features for Collide’s Learning Management System (LMS) alongside a cross-functional team.",
+      "Implemented responsive UI components using React and TailwindCSS, ensuring mobile-friendly interfaces.",
+      "Collaborated with product designers to transform Figma mockups into dynamic, interactive pages using modern JavaScript and CSS animation techniques.",
     ],
   },
   {
-    title: "Zuri Internship(Frontend Developer)",
-    date: "May 2023 - August 2023",
+    title: "Frontend Developer Intern at Zuri Training Program",
+    date: "May 2023 – August 2023",
     responsibilities: [
-      "Participated in developing a movie-web applications using real-time movie API'S",
-      "Conducted performance optimization tasks, resulting in a 15% improvement in page load times.",
-      "Gained hands-on experience with version control systems, specifically Git in a collaborative project.",
+      "Contributed to the development of a movie discovery web app using real-time APIs and React.js.",
+      "Optimized frontend performance and reduced load time by 15% through lazy loading and efficient component structure.",
+      "Worked in an agile environment with Git and GitHub for collaborative version control and issue tracking.",
+    ],
+  },
+  {
+    title: "Frontend Developer at HNG Internship (Remote)",
+    date: "September 2023 – November 2023",
+    responsibilities: [
+      "Worked on real-world web applications in sprints, collaborating with backend engineers and product designers.",
+      "Built reusable React components and wrote clean, testable code under tight deadlines.",
+      "Participated in code reviews and daily stand-ups, enhancing team communication and code quality.",
+    ],
+  },
+  {
+    title: "Open Source Contributor – FreeCodeCamp",
+    date: "January 2024 – Present",
+    responsibilities: [
+      "Contributed bug fixes and UI improvements to FreeCodeCamp's open-source curriculum platform.",
+      "Reviewed and submitted pull requests, following community contribution guidelines and Git best practices.",
+      "Actively engaged in the community forum, helping learners debug frontend issues and understand React fundamentals.",
+    ],
+  },
+  {
+    title: "Open Source Contributor – OnlyDust",
+    date: "April 2024 – Present",
+    responsibilities: [
+      "Contributed to web3-related open source projects through the OnlyDust platform, focusing on frontend enhancements and bug fixes.",
+      "Collaborated with global contributors and project maintainers in async workflows using GitHub and community tools.",
+      "Engaged in technical discussions, issue triaging, and reviewing contributions to ensure high code quality and consistency.",
     ],
   },
 ];
 
 export const Projects = [
   {
-    title: "FlipNet(Open Source Contribution)",
+    title: "FlipNet (Open Source Contribution)",
     imageUrl: flipnet_img,
     description:
-      "FlipNet is the next-generation prediction market on Starknet where players stake tokens to forecast event outcomes. Contribution details: Implemented FlipNet landing page.",
+      "FlipNet is a next-generation prediction market on Starknet, where players stake tokens to forecast event outcomes. Contribution: Implemented the landing page using modern responsive design techniques.",
     link: "https://github.com/Web3Novalabs/FlipNet",
   },
   {
     title: "ADii Commodity Trend Platform",
     imageUrl: adii,
     description:
-      "This website focuses on providing users with prices and trends of commodities across different states in Nigeria. I utilized the MERN-STACK in developing this platform.",
+      "ADii is a platform that provides users with real-time commodity prices and trend analysis across different Nigerian states. Contribution: Developed the full platform using the MERN stack.",
     link: "https://github.com/EDOHWARES/ADii",
   },
   {
-    title: "Citizen of Arcanis(Open Source Contribution)",
+    title: "Citizen of Arcanis (Open Source Contribution)",
     imageUrl: coa_img,
     description:
-      "An immersive on-chain multiplayer MMORPG set in a vibrant cyberpunk universe. Players assume the role of Citizens-reborn warriors navigating a world rich with rival factions, intricate economies, and impactful decisions. \n\n Contribution details: I helped improved the faction visuals",
+      "Citizen of Arcanis is an immersive on-chain MMORPG set in a cyberpunk universe, blending factions, economies, and player choices. Contribution: Enhanced visuals and user experience for faction interactions.",
     link: "https://github.com/SunsetLabs-Game/COA-Website",
   },
   {
-    title: "BudgetChain(Open Source Contribution)",
+    title: "BudgetChain (Open Source Contribution)",
     imageUrl: budgetChain_img,
     description:
-      "An AI-powered treasury management system built on StarkNet designed to revolutionize how DAOs manage, allocate, and optimize their financial resources. Contribution details: I helped build a scalable and comprehensive demo working page of the web app.",
+      "BudgetChain is an AI-powered treasury management system on StarkNet for DAOs to manage and optimize resources. Contribution: Built a scalable and functional demo page for the web app.",
     link: "https://github.com/BudgetChain/BudgetChain-Frontend",
   },
   {
     title: "SafeRoute-NG",
     imageUrl: safeRoute,
     description:
-      "SafeRoute-NG is a web solution designed to provide real-time data on road conditions. It aims to enhance communication and data flow for transporters, logistics companies. passengers and all road users..",
+      "SafeRoute-NG is a web app offering real-time insights into road conditions, built to enhance safety for transporters, logistics companies, and passengers. Contribution: Led the full-stack development of the platform.",
     link: "https://github.com/EDOHWARES/SafeRoute-NG",
   },
   {
-    title: "Predifi",
+    title: "Predifi (Open Source Contribution)",
     imageUrl: predifi_img,
     description:
-      "a decentralized outcome prediction protocol built on StartkNet that enables users to wager on future events in a secure, transparent, and trustless manner. Contribution detials: I helped build the user's dashboard.",
+      "Predifi is a decentralized outcome prediction protocol on StarkNet, allowing users to bet on future events securely and transparently. Contribution: Built the user dashboard interface and handled data integration.",
     link: "https://github.com/Web3Novalabs/predifi-frontend",
   },
 ];

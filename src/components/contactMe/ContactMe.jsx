@@ -14,8 +14,8 @@ const ContactMe = () => {
             <div style={{ flex: 1 }} className='w-full md:w-1/2'>
                 <ContactInfoCard 
                 icon={<FaSquareXTwitter className='text-[1.8rem]' />}
-                text='EDOHWARES'
-                link='https://x.com/0xEDOHWARES'
+                text='0xedohwarez'
+                link='https://x.com/0xedohwarez'
                 />
 
                 <ContactInfoCard 
