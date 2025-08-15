@@ -6,7 +6,7 @@ import SkillCardInfo from './skillCardInfo/SkillCardInfo';
 
 const Skills = () => {
 
-    const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
+    const [selectedSkill, setSelectedSkill] = useState(SKILLS[1]);
 
     const handleSelectedSkill = (data) => {
         setSelectedSkill(data);
