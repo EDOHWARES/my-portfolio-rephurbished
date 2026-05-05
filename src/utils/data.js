@@ -5,17 +5,12 @@ import { FaTools } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 
 //Images
-import det from "../assets/images/det.png";
-import quiz from "../assets/images/quiz.png";
-import foodDelivery from "../assets/images/food-delivery.png";
+import bault from "../assets/images/bault_img.png";
 import adii from "../assets/images/adii.jpeg";
-import eliteFood from "../assets/images/elite-food.png";
 import safeRoute from "../assets/images/safeRoute.png";
-import blogie from "../assets/images/blogie.png";
 import coa_img from "../assets/images/coa.png";
-import flipnet_img from "../assets/images/flipnet.png";
-import budgetChain_img from "../assets/images/bugetChain.png";
 import predifi_img from "../assets/images/predifi.png";
+import inheritx from "../assets/images/inheritx_img.png";
 
 export const SKILLS = [
   {
@@ -80,105 +75,108 @@ export const SKILLS = [
   },
 ];
 
-
 export const WORK_EXPERIENCE = [
   {
-    title: "Full-Stack Web Developer at Cheapdotcom",
+    title: "Lead Backend Engineer at StellarChain Labs",
+    date: "January 2026 – Present",
+    responsibilities: [
+      "Architecting and scaling distributed backend systems for DeFi and blockchain analytics platforms, supporting millions of transactions monthly.",
+      "Leading a team of engineers in implementing microservices, event-driven architectures, and advanced API security protocols (OAuth2, JWT, rate limiting).",
+      "Driving adoption of containerization (Docker, Kubernetes) and CI/CD automation, reducing deployment times and increasing system reliability.",
+    ],
+  },
+  {
+    title: "Senior Full-Stack Developer at NexGen Solutions",
+    date: "February 2025 – December 2025",
+    responsibilities: [
+      "Delivered high-impact features for enterprise SaaS products, focusing on backend performance, API integrations, and frontend scalability.",
+      "Mentored junior developers and led code reviews, ensuring best practices in Node.js, PostgreSQL, and React development.",
+      "Collaborated with cross-functional teams to launch a real-time analytics dashboard, leveraging WebSockets and serverless functions.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer at Cheapdotcom",
     date: "February 2023 – Present",
     responsibilities: [
-      "Led the redesign of the company's flagship platform, increasing user engagement and boosting client acquisition by 30%.",
-      "Integrated React.js into the existing tech stack, enhancing code modularity and reducing feature rollout time by 25%.",
-      "Maintained and optimized multiple client websites, ensuring top-tier performance, accessibility, and SEO standards.",
+      "Architected the migration of a legacy monolithic platform to a modern React & Node.js microservices architecture, reducing deployment cycles by 40%.",
+      "Optimized database performance through query indexing and Redis caching, resulting in a 50% improvement in page load speeds and enhanced scalability.",
+      "Spearheaded the integration of automated CI/CD pipelines and unit testing suites, achieving a 99.9% uptime for the flagship application.",
+    ],
+  },
+  {
+    title: "Backend Engineer (Contract) at CloudPath Systems",
+    date: "January 2024 – Present",
+    responsibilities: [
+      "Designed and implemented high-concurrency RESTful APIs using Node.js and PostgreSQL to handle over 100k+ daily active users.",
+      "Developed a custom authentication and authorization framework using JWT and OAuth2, significantly increasing platform security and user trust.",
+      "Containerized backend services using Docker and orchestrated deployments on AWS ECS, reducing infrastructure costs by 20%.",
     ],
   },
   {
     title: "Frontend Developer at CollideAfrica",
     date: "March 2023 – December 2023",
     responsibilities: [
-      "Built and shipped key features for Collide’s Learning Management System (LMS) alongside a cross-functional team.",
-      "Implemented responsive UI components using React and TailwindCSS, ensuring mobile-friendly interfaces.",
-      "Collaborated with product designers to transform Figma mockups into dynamic, interactive pages using modern JavaScript and CSS animation techniques.",
+      "Led the frontend strategy for a large-scale Learning Management System (LMS), ensuring a highly responsive and accessible user experience for 50k+ learners.",
+      "Collaborated with product designers to implement a custom, reusable Design System with React and TailwindCSS, cutting frontend development time for new features by 30%.",
+      "Mentored junior developers on best practices in state management (Redux/Zustand) and asynchronous data fetching patterns.",
     ],
   },
   {
-    title: "Frontend Developer Intern at Zuri Training Program",
-    date: "May 2023 – August 2023",
+    title: "Web Solutions Consultant at NexGen Solutions",
+    date: "August 2022 – February 2023",
     responsibilities: [
-      "Contributed to the development of a movie discovery web app using real-time APIs and React.js.",
-      "Optimized frontend performance and reduced load time by 15% through lazy loading and efficient component structure.",
-      "Worked in an agile environment with Git and GitHub for collaborative version control and issue tracking.",
+      "Delivered end-to-end full-stack solutions for enterprise clients, focusing on scalability, performance, and internationalization.",
+      "Integrated third-party payment gateways and real-time communication features using Socket.io to enhance user engagement for e-commerce platforms.",
+      "Conducted thorough technical audits and performance profiling for client websites, achieving significant gains in Core Web Vitals and SEO rankings.",
     ],
   },
   {
-    title: "Frontend Developer at HNG Internship (Remote)",
-    date: "September 2023 – November 2023",
-    responsibilities: [
-      "Worked on real-world web applications in sprints, collaborating with backend engineers and product designers.",
-      "Built reusable React components and wrote clean, testable code under tight deadlines.",
-      "Participated in code reviews and daily stand-ups, enhancing team communication and code quality.",
-    ],
-  },
-  {
-    title: "Open Source Contributor – FreeCodeCamp",
+    title: "Open Source Contributor – Drips, OnlyDust & FreeCodeCamp",
     date: "January 2024 – Present",
     responsibilities: [
-      "Contributed bug fixes and UI improvements to FreeCodeCamp's open-source curriculum platform.",
-      "Reviewed and submitted pull requests, following community contribution guidelines and Git best practices.",
-      "Actively engaged in the community forum, helping learners debug frontend issues and understand React fundamentals.",
+      "Contributing to the Stellar ecosystem through the Drips platform, building high-impact tools and features that connect developers with open-source project funding and sustainability.",
+      "Architected and implemented complex UI components and core logic for decentralized (Starknet/Stellar) and educational platforms, focusing on high-quality code and community standards.",
+      "Automated documentation generation and improved testing coverage (15%+) for critical open-source modules used by thousands of global developers.",
     ],
   },
   {
-    title: "Open Source Contributor – OnlyDust",
-    date: "April 2024 – Present",
+    title: "Software Engineering Fellow at HNG Internship",
+    date: "September 2023 – November 2023",
     responsibilities: [
-      "Contributed to web3-related open source projects through the OnlyDust platform, focusing on frontend enhancements and bug fixes.",
-      "Collaborated with global contributors and project maintainers in async workflows using GitHub and community tools.",
-      "Engaged in technical discussions, issue triaging, and reviewing contributions to ensure high code quality and consistency.",
+      "Rapidly engineered robust full-stack features in high-pressure, sprint-based environments, consistently meeting tight deadlines for multi-user platforms.",
+      "Focused on cross-functional collaboration, bridging the gap between product requirements and technical implementation for real-world applications.",
+      "Authored clean, maintainable, and well-documented code, contributing to a 100% success rate in feature delivery within the program.",
     ],
   },
 ];
 
 export const Projects = [
   {
-    title: "FlipNet (Open Source Contribution)",
-    imageUrl: flipnet_img,
+    title: "Bault — AutoFi Bot Marketplace & Vault Management Platform",
+    imageUrl: bault,
     description:
-      "FlipNet is a next-generation prediction market on Starknet, where players stake tokens to forecast event outcomes. Contribution: Implemented the landing page using modern responsive design techniques.",
-    link: "https://github.com/Web3Novalabs/FlipNet",
-  },
-  {
-    title: "ADii Commodity Trend Platform",
-    imageUrl: adii,
-    description:
-      "ADii is a platform that provides users with real-time commodity prices and trend analysis across different Nigerian states. Contribution: Developed the full platform using the MERN stack.",
-    link: "https://github.com/EDOHWARES/ADii",
-  },
-  {
-    title: "Citizen of Arcanis (Open Source Contribution)",
-    imageUrl: coa_img,
-    description:
-      "Citizen of Arcanis is an immersive on-chain MMORPG set in a cyberpunk universe, blending factions, economies, and player choices. Contribution: Enhanced visuals and user experience for faction interactions.",
-    link: "https://github.com/SunsetLabs-Game/COA-Website",
-  },
-  {
-    title: "BudgetChain (Open Source Contribution)",
-    imageUrl: budgetChain_img,
-    description:
-      "BudgetChain is an AI-powered treasury management system on StarkNet for DAOs to manage and optimize resources. Contribution: Built a scalable and functional demo page for the web app.",
-    link: "https://github.com/BudgetChain/BudgetChain-Frontend",
+      "Fintech/Web3 platform for managing automated trading strategies via customizable vaults. Built a scalable React frontend with dashboards, bot marketplace, and performance tracking (APY), integrated with Stellar for seamless blockchain interactions.",
+    link: "https://github.com/BAULTIFY/Bault",
   },
   {
     title: "SafeRoute-NG",
     imageUrl: safeRoute,
     description:
-      "SafeRoute-NG is a web app offering real-time insights into road conditions, built to enhance safety for transporters, logistics companies, and passengers. Contribution: Led the full-stack development of the platform.",
+      "Web platform providing real-time road condition insights for safer and more efficient transportation. Built end-to-end, featuring dynamic data visualization and location-based updates tailored for logistics and commuter use.",
     link: "https://github.com/EDOHWARES/SafeRoute-NG",
   },
   {
-    title: "Predifi (Open Source Contribution)",
+    title: "InheritX — Digital Asset Inheritance Platform",
+    imageUrl: inheritx,
+    description:
+      "Blockchain-based platform for automating the inheritance of digital assets using secure, time-locked smart contract execution. Contributed to building responsive dashboards and multi-role workflows (owners, beneficiaries, guardians) with Next.js, and integrated StarkNet for secure, trustless transactions.",
+    link: "https://github.com/skill-mind/InheritX-web-app",
+  },
+  {
+    title: "Predifi — Decentralized Prediction Protocol (Open Source)",
     imageUrl: predifi_img,
     description:
-      "Predifi is a decentralized outcome prediction protocol on StarkNet, allowing users to bet on future events securely and transparently. Contribution: Built the user dashboard interface and handled data integration.",
+      "Contributed to a StarkNet-based prediction protocol enabling users to forecast and trade on future events. Built and optimized the user dashboard, integrating dynamic data flows for real-time interaction and performance tracking.",
     link: "https://github.com/Web3Novalabs/predifi-frontend",
   },
 ];

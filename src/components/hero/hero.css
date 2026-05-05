@@ -19,3 +19,21 @@
     bottom: 2rem;
     right: 0rem;
 }
+
+.floating-img {
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 40px rgba(124, 102, 227, 0.2);
+    border: 1px solid rgba(124, 102, 227, 0.1);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
