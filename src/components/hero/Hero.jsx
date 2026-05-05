@@ -17,7 +17,7 @@ const Hero = () => {
       className="hero-container flex flex-col gap-14 items-center justify-center md:items-start md:justify-between md:flex-row md:gap-0 overflow-hidden"
     >
       <div className="w-full md:w-1/2">
-        <h2 className="text-[2.8rem] md:text-[3.3rem] leading-[3.5rem] md:leading-[5rem] font-[600] mb-[1rem] text-center md:text-start">
+        <h2 className="text-[2.3rem] md:text-[3.3rem] leading-[3.5rem] md:leading-[5rem] font-[600] mb-[1rem] text-center md:text-start">
           Building Scalable Web & Web3 Applications for Real-World Use Cases.
         </h2>
 
