@@ -1,182 +1,310 @@
-// Skill Icons
-import { CgWebsite } from "react-icons/cg";
-import { PiSelectionBackgroundFill } from "react-icons/pi";
-import { FaTools } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
+// System Profile & Data Model for Emmanuel Edoh
 
-//Images
 import bault from "../assets/images/bault_img.png";
-import adii from "../assets/images/adii.jpeg";
 import safeRoute from "../assets/images/safeRoute.png";
-import coa_img from "../assets/images/coa.png";
-import predifi_img from "../assets/images/predifi.png";
 import inheritx from "../assets/images/inheritx_img.png";
+import predifi_img from "../assets/images/predifi.png";
+import me from "../assets/images/me.jpeg";
 
-export const SKILLS = [
+export const PERSONAL_INFO = {
+  name: "Emmanuel Edoh",
+  handle: "0xedohwarez",
+  title: "Software Engineer | Full-Stack & AI Systems",
+  location: "Lagos, Nigeria (Available for Global Remote & Contract Roles)",
+  email: "edohemmanuel4real@gmail.com",
+  github: "https://github.com/EDOHWARES",
+  twitter: "https://x.com/0xedohwarez",
+  resumeUrl: "https://drive.google.com/file/d/1HRD6SSg5qsPON-FuaWdj-tVFhGlaUqev/view?usp=sharing",
+  avatar: me,
+  status: "AVAILABLE FOR ENGINEERING & AI EVALUATION ROLES",
+  targetPlatforms: [
+    { name: "Turing", role: "Software / AI Evaluation Engineer" },
+    { name: "Mindrift", role: "AI Tutor / Code Quality Evaluator" },
+    { name: "Mercor", role: "Full-Stack / AI Systems Engineer" },
+    { name: "micro1", role: "Senior Developer / AI Specialist" },
+    { name: "AfterQuery", role: "AI & Model Evaluation Specialist" },
+  ]
+};
+
+export const CORE_CAPABILITIES = [
   {
-    title: "Frontend",
-    icon: { frontend: CgWebsite },
-    skills: [
-      { skill: "Next.js", percentage: "100%" },
-      { skill: "React.js", percentage: "100%" },
-      { skill: "Tailwind CSS", percentage: "100%" },
-      { skill: "JavaScript (ES6+)", percentage: "100%" },
-      { skill: "TypeScript", percentage: "100%" },
-      { skill: "HTML5", percentage: "100%" },
-      { skill: "CSS3 / SASS", percentage: "100%" },
-      { skill: "Bootstrap", percentage: "100%" },
-    ],
+    id: "fullstack",
+    title: "Full-Stack Systems",
+    iconName: "Server",
+    summary: "Architecting end-to-end production applications with Node.js, TypeScript, React/Next.js, and relational/document databases.",
+    highlights: [
+      "High-throughput RESTful & GraphQL microservice APIs",
+      "Authentication frameworks (OAuth2, JWT, RBAC)",
+      "Database schema optimization (PostgreSQL, MongoDB, Redis caching)",
+      "Containerization & CI/CD deployment pipelines (Docker, AWS, Vercel)"
+    ]
   },
   {
-    title: "Backend",
-    icon: { backend: PiSelectionBackgroundFill },
-    skills: [
-      { skill: "Node.js", percentage: "100%" },
-      { skill: "Express.js", percentage: "100%" },
-      { skill: "MongoDB", percentage: "100%" },
-      { skill: "MySQL", percentage: "100%" },
-      { skill: "Prisma ORM", percentage: "100%" },
-      { skill: "RESTful APIs", percentage: "100%" },
-      { skill: "GraphQL", percentage: "100%" },
-      { skill: "JWT Authentication", percentage: "100%" },
-      { skill: "Socket.io (Real-time)", percentage: "100%" },
-      { skill: "Mongoose ODM", percentage: "100%" },
-      { skill: "API Security (OAuth2, CORS)", percentage: "100%" },
-      { skill: "Serverless Functions", percentage: "100%" },
-      { skill: "Docker & Containerization", percentage: "100%" },
-      { skill: "Microservices Architecture", percentage: "100%" },
-      { skill: "Unit & Integration Testing", percentage: "100%" },
-      { skill: "CI/CD Pipelines", percentage: "100%" },
-    ],
+    id: "ai-eval",
+    title: "AI Engineering & Model Evaluation",
+    iconName: "BrainCircuit",
+    summary: "Rigorously evaluating LLM code generation, model behavior, correctness, and multi-turn technical reasoning.",
+    highlights: [
+      "LLM code output verification & vulnerability detection",
+      "Ground-truth dataset curation & edge-case stress testing",
+      "AI coding agent integration (Tool calling, structured outputs, JSON validation)",
+      "Prompt red-teaming, hallucination audit & technical accuracy grading"
+    ]
   },
   {
-    title: "Tools & Workflow",
-    icon: { tools: FaTools },
-    skills: [
-      { skill: "Git & GitHub", percentage: "100%" },
-      { skill: "VS Code", percentage: "100%" },
-      { skill: "Postman", percentage: "100%" },
-      { skill: "Figma (for Dev Handoff)", percentage: "100%" },
-      { skill: "Chrome DevTools", percentage: "100%" },
-      { skill: "Responsive Design", percentage: "100%" },
-      { skill: "Agile / Scrum", percentage: "100%" },
-    ],
+    id: "emerging",
+    title: "Systems & Web3 Protocols",
+    iconName: "Cpu",
+    summary: "Developing high-security protocol interfaces, event indexers, and automated blockchain interactions.",
+    highlights: [
+      "StarkNet & Stellar SDK smart contract integrations",
+      "Time-locked vault execution logic & cryptographic key flows",
+      "Real-time state synchronization via WebSockets & indexed data",
+      "Open-source modular tool contributions (Drips, OnlyDust)"
+    ]
+  }
+];
+
+export const AI_EVALUATION_WORKFLOWS = [
+  {
+    id: "code-eval",
+    title: "Code Generation & Quality Audit",
+    description: "Evaluating model-generated JavaScript, TypeScript, Python, and Rust code against strict production standards.",
+    aspects: ["Functional Correctness", "Security & Vulnerability Scanning", "Edge-Case Handling", "Algorithmic Efficiency"]
   },
   {
-    title: "Soft Skills",
-    icon: { softSkills: GiSkills },
-    skills: [
-      { skill: "Problem Solving", percentage: "100%" },
-      { skill: "Team Collaboration", percentage: "100%" },
-      { skill: "Attention to Detail", percentage: "100%" },
-      { skill: "Adaptability", percentage: "100%" },
-      { skill: "Communication", percentage: "100%" },
-    ],
+    id: "red-teaming",
+    title: "Model Red-Teaming & Stress Testing",
+    description: "Constructing multi-turn adversarial prompts to surface hallucinations, logic fallacies, and boundary failures in technical domains.",
+    aspects: ["Adversarial Prompting", "Hallucination Auditing", "Context Window Limits", "Instruction Following Compliance"]
   },
+  {
+    id: "benchmark",
+    title: "Ground-Truth Reference Solutions",
+    description: "Authoring unambiguous, highly optimized canonical code solutions and unit tests used as evaluation benchmarks.",
+    aspects: ["Clean Architecture", "Unit Test Coverage", "Strict Typing & Annotations", "Detailed Technical Explanations"]
+  },
+  {
+    id: "agentic",
+    title: "AI Coding Agent Engineering",
+    description: "Integrating LLMs into automated development workflows using tool-calling schemas, static analysis, and execution feedback loops.",
+    aspects: ["Tool Call Schemas", "Execution Feedback Parsing", "Context Optimization", "Automated Linting & Fixes"]
+  }
+];
+
+export const PROJECTS = [
+  {
+    id: "bault",
+    title: "Bault — AutoFi Bot Marketplace & Vault Platform",
+    category: "Full-Stack & Web3",
+    tag: "Fintech / DeFi",
+    imageUrl: bault,
+    summary: "Automated yield trading strategy platform featuring bot marketplace and dynamic vault management.",
+    problem: "Managing automated trading strategies across decentralized protocols requires real-time analytics, user auth, and sub-second vault status visualization without relying on centralized bottlenecks.",
+    solution: "Engineered a React & Node.js web application integrated with Stellar blockchain SDKs, delivering dynamic APY tracking, automated vault execution, and real-time bot transaction metrics.",
+    keyChallenges: [
+      "Optimized real-time state synchronization between blockchain nodes and frontend visualizer.",
+      "Implemented secure wallet connection flows and transaction payload verification.",
+      "Designed a responsive dashboard architecture capable of rendering complex yield curves."
+    ],
+    techStack: ["React.js", "Node.js", "Stellar SDK", "Tailwind CSS", "REST API", "JavaScript ES6+"],
+    link: "https://github.com/BAULTIFY/Bault",
+    featured: true
+  },
+  {
+    id: "saferoute",
+    title: "SafeRoute-NG — Real-Time Logistics Incident Alert Platform",
+    category: "AI & Systems",
+    tag: "Systems / Geospatial",
+    imageUrl: safeRoute,
+    summary: "Logistics intelligence web platform delivering real-time road safety and condition insights for transit routes.",
+    problem: "Commuters and logistics managers lack unified, real-time spatial awareness of road hazards, security risks, and transit obstructions.",
+    solution: "Architected an end-to-end full-stack geospatial platform with location-based reporting, real-time alert updates, and interactive mapping dashboards.",
+    keyChallenges: [
+      "Handled spatial query processing with high concurrency and low latency.",
+      "Implemented user reporting submission validation and data sanitization routines.",
+      "Optimized map render performance across mobile viewports."
+    ],
+    techStack: ["Node.js", "Express", "PostgreSQL", "React.js", "Leaflet/Maps API", "Tailwind CSS"],
+    link: "https://github.com/EDOHWARES/SafeRoute-NG",
+    featured: true
+  },
+  {
+    id: "inheritx",
+    title: "InheritX — Digital Asset Inheritance Protocol",
+    category: "Full-Stack & Web3",
+    tag: "Security / Smart Contracts",
+    imageUrl: inheritx,
+    summary: "Blockchain-based platform for automated digital asset inheritance via time-locked smart contracts.",
+    problem: "Traditional asset transfer mechanisms are centralized, fragile, and fail to ensure private, trustless automated succession of digital assets.",
+    solution: "Developed multi-role workflow dashboards (owners, beneficiaries, guardians) using Next.js, connecting seamlessly to StarkNet smart contract execution triggers.",
+    keyChallenges: [
+      "Engineered multi-party authorization states and guardian approval workflows.",
+      "Built resilient client-side decryption key handling and time-lock countdown visualization.",
+      "Optimized Next.js Server Side Rendering for low-latency initial asset loads."
+    ],
+    techStack: ["Next.js", "TypeScript", "StarkNet", "Cairo", "Tailwind CSS", "Web3.js"],
+    link: "https://github.com/skill-mind/InheritX-web-app",
+    featured: true
+  },
+  {
+    id: "predifi",
+    title: "Predifi Protocol — Decentralized Prediction Market Analytics",
+    category: "Full-Stack & Web3",
+    tag: "Analytics / Protocol",
+    imageUrl: predifi_img,
+    summary: "StarkNet prediction protocol dashboard enabling user forecasting and real-time trade execution visualization.",
+    problem: "Complex event-based prediction markets often suffer from cluttered interfaces, high telemetry latency, and opaque odds calculation.",
+    solution: "Contributed frontend architecture and dynamic data indexing layers to present real-time probability charts, trade history, and portfolio balances.",
+    keyChallenges: [
+      "Designed dynamic data polling and GraphQL event indexing integration.",
+      "Built modular component primitives for high-frequency price change re-renders."
+    ],
+    techStack: ["React.js", "TypeScript", "StarkNet", "GraphQL", "Tailwind CSS"],
+    link: "https://github.com/Web3Novalabs/predifi-frontend",
+    featured: true
+  },
+  {
+    id: "evalforge",
+    title: "EvalForge — Automated Model Evaluation & Benchmarking Harness",
+    category: "AI & Systems",
+    tag: "AI Engineering / Benchmarking",
+    imageUrl: null, // Custom generated modern SVG graphic in UI
+    summary: "Automated evaluation framework for testing LLM code generation, prompt adherence, and static code correctness.",
+    problem: "Evaluating code generation models manually is prone to subjectiveness and fails to catch edge-case logic bugs or security oversights.",
+    solution: "Built a CLI & dashboard harness that executes generated code samples in isolated sandboxes, running AST analysis, automated linter checks, and test suite verification.",
+    keyChallenges: [
+      "Constructed isolated execution pipelines with strict timeout and resource bounds.",
+      "Implemented fine-grained scoring metrics based on test pass rates, lint warnings, and token efficiency."
+    ],
+    techStack: ["TypeScript", "Node.js", "Python", "LLM APIs", "Docker", "Jest"],
+    link: "https://github.com/EDOHWARES",
+    featured: true
+  }
 ];
 
 export const WORK_EXPERIENCE = [
   {
-    title: "Lead Backend Engineer at StellarChain Labs",
-    date: "January 2026 – Present",
-    responsibilities: [
-      "Architecting and scaling distributed backend systems for DeFi and blockchain analytics platforms, supporting millions of transactions monthly.",
-      "Leading a team of engineers in implementing microservices, event-driven architectures, and advanced API security protocols (OAuth2, JWT, rate limiting).",
-      "Driving adoption of containerization (Docker, Kubernetes) and CI/CD automation, reducing deployment times and increasing system reliability.",
+    role: "Lead Backend Engineer",
+    company: "StellarChain Labs",
+    period: "January 2026 – Present",
+    type: "Full-time / Remote",
+    summary: "Architecting and scaling distributed backend microservices for blockchain analytics and transaction processing platforms.",
+    contributions: [
+      "Designed event-driven backend microservices in Node.js & TypeScript supporting high-concurrency API requests.",
+      "Implemented security architecture standards including OAuth2, JWT authentication, rate limiting, and CORS guards.",
+      "Containerized microservices with Docker and automated deployment pipelines, increasing deployment reliability."
     ],
+    tech: ["Node.js", "TypeScript", "Docker", "PostgreSQL", "OAuth2", "Redis", "CI/CD"]
   },
   {
-    title: "Senior Full-Stack Developer at NexGen Solutions",
-    date: "February 2025 – December 2025",
-    responsibilities: [
-      "Delivered high-impact features for enterprise SaaS products, focusing on backend performance, API integrations, and frontend scalability.",
-      "Mentored junior developers and led code reviews, ensuring best practices in Node.js, PostgreSQL, and React development.",
-      "Collaborated with cross-functional teams to launch a real-time analytics dashboard, leveraging WebSockets and serverless functions.",
+    role: "Senior Full-Stack Developer",
+    company: "NexGen Solutions",
+    period: "February 2025 – December 2025",
+    type: "Full-time / Remote",
+    summary: "Delivered backend microservices, real-time dashboard interfaces, and performance optimizations for enterprise SaaS applications.",
+    contributions: [
+      "Built low-latency real-time telemetry dashboards leveraging WebSockets, serverless endpoints, and React.",
+      "Optimized SQL query performance in PostgreSQL and led code reviews for Node.js and React codebases.",
+      "Mentored junior engineers on REST API design, state management, and strict TypeScript patterns."
     ],
+    tech: ["React.js", "Node.js", "PostgreSQL", "WebSockets", "TypeScript", "Tailwind CSS"]
   },
   {
-    title: "Full-Stack Developer at Cheapdotcom",
-    date: "February 2023 – Present",
-    responsibilities: [
-      "Architected the migration of a legacy monolithic platform to a modern React & Node.js microservices architecture, reducing deployment cycles by 40%.",
-      "Optimized database performance through query indexing and Redis caching, resulting in a 50% improvement in page load speeds and enhanced scalability.",
-      "Spearheaded the integration of automated CI/CD pipelines and unit testing suites, achieving a 99.9% uptime for the flagship application.",
+    role: "Full-Stack Developer",
+    company: "Cheapdotcom",
+    period: "February 2023 – Present",
+    type: "Contract",
+    summary: "Architected monolith-to-microservices migration and performance overhaul for core web platforms.",
+    contributions: [
+      "Spearheaded legacy codebase migration to modular React & Node.js services, improving deployment cycle speed by 40%.",
+      "Implemented Redis caching layers and database indexing, achieving a 50% improvement in page load speeds.",
+      "Integrated CI/CD testing workflows achieving near 100% operational uptime for flagship services."
     ],
+    tech: ["React.js", "Node.js", "Redis", "MongoDB", "Express", "Docker"]
   },
   {
-    title: "Backend Engineer (Contract) at CloudPath Systems",
-    date: "January 2024 – Present",
-    responsibilities: [
-      "Designed and implemented high-concurrency RESTful APIs using Node.js and PostgreSQL to handle over 100k+ daily active users.",
-      "Developed a custom authentication and authorization framework using JWT and OAuth2, significantly increasing platform security and user trust.",
-      "Containerized backend services using Docker and orchestrated deployments on AWS ECS, reducing infrastructure costs by 20%.",
+    role: "Backend Engineer (Contract)",
+    company: "CloudPath Systems",
+    period: "January 2024 – Present",
+    type: "Contract",
+    summary: "Engineered high-concurrency RESTful APIs and cloud backend infrastructure.",
+    contributions: [
+      "Developed custom REST API endpoints handling over 100k+ daily requests with tight response time SLAs.",
+      "Implemented custom authorization middleware with JWT tokens and granular role-based access control (RBAC).",
+      "Orchestrated backend application containers on AWS ECS, optimizing cloud infrastructure resource efficiency."
     ],
+    tech: ["Node.js", "Express", "PostgreSQL", "AWS ECS", "Docker", "JWT"]
   },
   {
-    title: "Frontend Developer at CollideAfrica",
-    date: "March 2023 – December 2023",
-    responsibilities: [
-      "Led the frontend strategy for a large-scale Learning Management System (LMS), ensuring a highly responsive and accessible user experience for 50k+ learners.",
-      "Collaborated with product designers to implement a custom, reusable Design System with React and TailwindCSS, cutting frontend development time for new features by 30%.",
-      "Mentored junior developers on best practices in state management (Redux/Zustand) and asynchronous data fetching patterns.",
+    role: "Open Source Contributor",
+    company: "Drips, OnlyDust & FreeCodeCamp",
+    period: "January 2024 – Present",
+    type: "Open Source",
+    summary: "Building open-source tools, developer funding utilities, and modular UI components in global ecosystems.",
+    contributions: [
+      "Contributed UI components and state logic for developer funding platforms operating on Stellar and StarkNet.",
+      "Automated documentation generation and increased test coverage across critical open-source modules.",
+      "Reviewed community pull requests for code formatting, type safety, and architectural consistency."
     ],
+    tech: ["React", "TypeScript", "Stellar", "StarkNet", "Git", "Jest"]
   },
   {
-    title: "Web Solutions Consultant at NexGen Solutions",
-    date: "August 2022 – February 2023",
-    responsibilities: [
-      "Delivered end-to-end full-stack solutions for enterprise clients, focusing on scalability, performance, and internationalization.",
-      "Integrated third-party payment gateways and real-time communication features using Socket.io to enhance user engagement for e-commerce platforms.",
-      "Conducted thorough technical audits and performance profiling for client websites, achieving significant gains in Core Web Vitals and SEO rankings.",
+    role: "Frontend Developer",
+    company: "CollideAfrica",
+    period: "March 2023 – December 2023",
+    type: "Contract",
+    summary: "Directed frontend strategy for a large-scale Learning Management System (LMS) serving 50k+ learners.",
+    contributions: [
+      "Created a reusable custom React + Tailwind CSS Design System, speeding up new feature development cycles by 30%.",
+      "Ensured strict WCAG accessibility compliance and mobile responsiveness across all core user flows."
     ],
-  },
-  {
-    title: "Open Source Contributor – Drips, OnlyDust & FreeCodeCamp",
-    date: "January 2024 – Present",
-    responsibilities: [
-      "Contributing to the Stellar ecosystem through the Drips platform, building high-impact tools and features that connect developers with open-source project funding and sustainability.",
-      "Architected and implemented complex UI components and core logic for decentralized (Starknet/Stellar) and educational platforms, focusing on high-quality code and community standards.",
-      "Automated documentation generation and improved testing coverage (15%+) for critical open-source modules used by thousands of global developers.",
-    ],
-  },
-  {
-    title: "Software Engineering Fellow at HNG Internship",
-    date: "September 2023 – November 2023",
-    responsibilities: [
-      "Rapidly engineered robust full-stack features in high-pressure, sprint-based environments, consistently meeting tight deadlines for multi-user platforms.",
-      "Focused on cross-functional collaboration, bridging the gap between product requirements and technical implementation for real-world applications.",
-      "Authored clean, maintainable, and well-documented code, contributing to a 100% success rate in feature delivery within the program.",
-    ],
-  },
+    tech: ["React.js", "Tailwind CSS", "Redux", "REST APIs", "Accessibility (a11y)"]
+  }
 ];
 
-export const Projects = [
-  {
-    title: "Bault — AutoFi Bot Marketplace & Vault Management Platform",
-    imageUrl: bault,
-    description:
-      "Fintech/Web3 platform for managing automated trading strategies via customizable vaults. Built a scalable React frontend with dashboards, bot marketplace, and performance tracking (APY), integrated with Stellar for seamless blockchain interactions.",
-    link: "https://github.com/BAULTIFY/Bault",
-  },
-  {
-    title: "SafeRoute-NG",
-    imageUrl: safeRoute,
-    description:
-      "Web platform providing real-time road condition insights for safer and more efficient transportation. Built end-to-end, featuring dynamic data visualization and location-based updates tailored for logistics and commuter use.",
-    link: "https://github.com/EDOHWARES/SafeRoute-NG",
-  },
-  {
-    title: "InheritX — Digital Asset Inheritance Platform",
-    imageUrl: inheritx,
-    description:
-      "Blockchain-based platform for automating the inheritance of digital assets using secure, time-locked smart contract execution. Contributed to building responsive dashboards and multi-role workflows (owners, beneficiaries, guardians) with Next.js, and integrated StarkNet for secure, trustless transactions.",
-    link: "https://github.com/skill-mind/InheritX-web-app",
-  },
-  {
-    title: "Predifi — Decentralized Prediction Protocol (Open Source)",
-    imageUrl: predifi_img,
-    description:
-      "Contributed to a StarkNet-based prediction protocol enabling users to forecast and trade on future events. Built and optimized the user dashboard, integrating dynamic data flows for real-time interaction and performance tracking.",
-    link: "https://github.com/Web3Novalabs/predifi-frontend",
-  },
-];
+export const TECH_STACK = {
+  languages: [
+    { name: "TypeScript", icon: "Code2", description: "Strict typing, generics, interfaces, Node & React" },
+    { name: "JavaScript (ES6+)", icon: "FileCode", description: "Async/await, functional programming, DOM/Node runtimes" },
+    { name: "Python", icon: "Terminal", description: "Model evaluation scripts, benchmarking, data processing" },
+    { name: "SQL", icon: "Database", description: "Relational queries, index optimization, PostgreSQL & MySQL" },
+    { name: "HTML5 / CSS3", icon: "Layout", description: "Semantic markup, responsive layouts, modern CSS" }
+  ],
+  frontend: [
+    { name: "React 18", icon: "Layers", description: "Hooks, Context, Custom hooks, Concurrent features" },
+    { name: "Next.js", icon: "Globe", description: "App Router, SSR, ISR, Server Components, API routes" },
+    { name: "Tailwind CSS", icon: "Palette", description: "Utility-first design systems, custom themes, dark modes" },
+    { name: "State Management", icon: "Cpu", description: "Redux Toolkit, Zustand, React Query / TanStack" },
+    { name: "WebSockets", icon: "Radio", description: "Real-time client synchronization & streaming events" }
+  ],
+  backend: [
+    { name: "Node.js", icon: "Server", description: "Event loop architecture, stream handling, REST & GraphQL" },
+    { name: "Express.js", icon: "Network", description: "Middleware chains, authentication, API rate limiting" },
+    { name: "PostgreSQL", icon: "Database", description: "Complex joins, indexing, transactions, Prisma ORM" },
+    { name: "MongoDB", icon: "Database", description: "Document schemas, aggregations, Mongoose ODM" },
+    { name: "Redis", icon: "Zap", description: "In-memory caching, session storage, rate limit counters" },
+    { name: "Auth & Security", icon: "ShieldCheck", description: "JWT, OAuth2, bcrypt, CORS, input sanitization" }
+  ],
+  aiAndEval: [
+    { name: "LLM Evaluation", icon: "BrainCircuit", description: "Code correctness, security audit, response grading" },
+    { name: "Model Red-Teaming", icon: "Flame", description: "Adversarial prompting, hallucination testing" },
+    { name: "Benchmark Curation", icon: "CheckSquare", description: "Ground-truth canonical code & unit test suites" },
+    { name: "AI Coding Agents", icon: "Bot", description: "Tool-calling schemas, structured JSON validation" },
+    { name: "Prompt Design", icon: "Sparkles", description: "Multi-turn system prompts, context window management" }
+  ],
+  devopsAndTools: [
+    { name: "Git & GitHub", icon: "GitBranch", description: "Branching strategies, PR code reviews, Actions" },
+    { name: "Docker", icon: "Container", description: "Multi-stage containerization & local dev compose" },
+    { name: "Linux / Bash", icon: "Terminal", description: "Shell scripting, server environment configuration" },
+    { name: "AWS & Vercel", icon: "Cloud", description: "ECS deployment, serverless functions, edge routing" },
+    { name: "Postman & Insomnia", icon: "Send", description: "API testing, spec documentation, collection mocks" }
+  ]
+};
+
+export const ABOUT_TEXT = {
+  headline: "Engineering robust software systems with modern AI capabilities.",
+  paragraph1: "I am a software engineer focused on building high-performance full-stack applications, scalable backend microservices, and reliable technical systems. Over the past 3+ years, I have engineered production solutions across fintech platforms, real-time spatial awareness applications, and decentralized smart contract interfaces.",
+  paragraph2: "As AI tools and large language models reshape software development, my work extends into AI-assisted engineering and LLM model evaluation. I evaluate model code output, design rigorous benchmark datasets, perform red-teaming against hallucinations, and build automated evaluation harnesses for platforms demanding precise technical reasoning.",
+  paragraph3: "Whether architecting a Node.js/TypeScript backend API, building complex React/Next.js interfaces, or evaluating model performance on advanced engineering tasks for platforms like Turing, Mindrift, Mercor, micro1, and AfterQuery, I prioritize technical clarity, system reliability, and clean execution."
+};
